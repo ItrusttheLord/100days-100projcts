@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --mood-color-1: orange;
+  --mood-color-2: green;
+  --mood-color-3: red;
+  --mood-color-4: blue;
+  --mood-color-5: purple;
+}
+
+body {
+  background: rgb(129, 102, 107);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content h1 {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+.content .select {
+  padding-top: 5px;
+}
+
+.list {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 3px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.mood {
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  color: #000;
+  margin: 5px;
+  line-height: 20px;
+}
+
+.mood_1 {
+  color: var(--mood-color-1);
+}
+.mood_2 {
+  color: var(--mood-color-2);
+}
+.mood_3 {
+  color: var(--mood-color-3);
+}
+.mood_4 {
+  color: var(--mood-color-4);
+}
+.mood_5 {
+  color: var(--mood-color-5);
+}
+
+.mood.selected {
+  background-color: currentColor;
+}
+.mood.selected i {
+  color: #fff;
+}
+
+.mood:active {
+  transform: scale(0.9);
+}
+
+.mood:focus {
+  outline: 0;
+}
+
+.btn button {
+  margin-top: 2px;
+  font-size: 1rem;
+  color: #020202;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.random {
+  background: pink;
+}
+
+.clear {
+  background: red;
+}
+
+.clear:hover,
+.random:hover {
+  background: #80646d;
+  transform: translateY(2px);
+}
+
+.months-container {
+  justify-content: center;
+  gap: 40px;
+}
+
+.calendar .months-container .month-container {
+  background: #fff;
+  padding: 20px;
+  min-width: 280px;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.calendar table.month th.month-title {
+  color: #5a8990;
+  font-size: 1.9em;
+  font-weight: 200;
+  font-family: "Dancing Script", cursive;
+}
+
+table.month td:first-child,
+table.month td:last-child,
+table.month thead tr:nth-child(2) th:first-child,
+table.month thead tr:nth-child(2) th:last-child {
+  color: #16d0d6;
+}
+
+.calendar table.month td.day .day-content {
+  padding: 6px 8px;
+}
+
+.calendar table.month th.day-header {
+  color: #777;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.month tr td {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #000;
+}
+
+.calendar table.month td.day .day-content:hover {
+  background: #f75c90;
+  color: #fff;
+}
+
+.calendar .calendar-header {
+  border: none;
+}
+
+.calendar .calendar-header table th:hover {
+  background: transparent;
+}
+
+.calendar .calendar-header .year-title {
+  font-size: 4em;
+  font-family: "Dancing Script", cursive;
+}
+
+.calendar .calendar-header .year-neighbor {
+  font-size: 2.25em;
+}
+
+.calendar .calendar-header .year-neighbor2 {
+  font-size: 1em;
+}

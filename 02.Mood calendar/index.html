@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Calendar</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/25048f03d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <h1>2024 Mood Calendar</h1>
+      <p>Choose your mood for the whole year?</p>
+      <p class="select">Select Mood:</p>
+      <ul class="list">
+        <li class="mood mood_1">
+          <i class="fa-regular fa-face-laugh-squint"></i>
+        </li>
+        <li class="mood mood_2">
+          <i class="fa-regular fa-face-smile"></i>
+        </li>
+        <li class="mood mood_3">
+          <i class="fa-regular fa-face-angry"></i>
+        </li>
+        <li class="mood mood_4"><i class="fa-regular fa-face-frown"></i></li>
+        <li class="mood mood_5">
+          <i class="fa-regular fa-face-sad-cry"></i>
+        </li>
+      </ul>
+      <p>Select the day with the mood color to mark it!</p>
+
+      <div class="btn">
+        <button class="clear">Clear All</button>
+        <button class="random">Random</button>
+      </div>
+    </div>
+    <div class="calendar"></div>
+  </body>
+</html>
