@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Angkor&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+#game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Angkor", sans-serif;
+}
+h2 {
+  padding-bottom: 25px;
+}
+
+#username-container {
+  margin-bottom: 20px;
+  padding: 30px;
+  align-items: center;
+  font-family: "Roboto Mono", sans-serif;
+  display: block;
+}
+
+#username-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+#start-game {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s all ease;
+}
+
+#start-game:hover {
+  background-color: #0056b3;
+  transform: 1px;
+  translate: 2px;
+}
+
+#game-content {
+  display: none;
+  border: 2px solid #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 2em;
+  padding: 30px 20px;
+  position: relative;
+  margin: auto;
+  width: 800px;
+  max-width: 100%;
+}
+
+#timer {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#question-container {
+  padding: 10px;
+  font-size: 50px;
+  line-height: 100px;
+  margin: 0;
+}
+
+#answer-input {
+  border: 0;
+  border: 2px solid #000;
+  background: transparent;
+  font-size: 70px;
+  max-width: 200px;
+}
+
+#answer-input:focus {
+  outline: none;
+}
+
+#answer-input.wrong {
+  border-color: orangered;
+}
+
+#submit-answer {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#submit-answer:hover {
+  background-color: #0056b3;
+}
+
+#feedback {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#scoreEl {
+  position: absolute;
+  top: 1px;
+  left: 20px;
+  font-size: 1.4rem;
+}
+
+#userEl {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Wizz Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="username-container">
+        <h1>Math Challenge</h1>
+        <h2>Let's see how smart you are?! 😁</h2>
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Enter your username"
+          autofocus
+          required
+        />
+        <button id="start-game">Start Game</button>
+      </div>
+      <div id="game-content">
+        <h1>Guess the answer</h1>
+        <h2>Are you really smart?🤓</h2>
+        <div id="timer">Time Left: <span id="time">30</span> seconds</div>
+        <div id="question-container">
+          <span id="question">3 * 3</span>
+        </div>
+        <input type="number" id="answer-input" autofocus />
+        <button id="submit-answer">Submit</button>
+        <div id="feedback"></div>
+        <div id="score-container">
+          <p id="userEl">Hello, <span id="username">Anonymous</span></p>
+          <p id="scoreEl">Score: <span id="score">0</span></p>
+          <p id="highscoreEl">High Score: <span id="high-score">0</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
